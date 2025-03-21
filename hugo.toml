@@ -1,4 +1,4 @@
-baseURL = 'http://localhost:1313/'
+baseURL = "https://moduleb-com.github.io/blog/"
 languageCode = 'en-us'
 title = 'Shinitai'
 theme = "hugo-blog-awesome"
