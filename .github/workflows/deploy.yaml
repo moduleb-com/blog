@@ -1,0 +1,32 @@
+name: Deploy Hugo site to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main  # main ブランチへのプッシュをトリガー (または master)
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          submodules: true  # サブモジュールをフェッチ (テーマを使用しているため)
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: 'latest'  # Hugo のバージョンを指定
+          extended: true # extended バージョンを使用
+
+      - name: Build
+        run: hugo --minify  # Hugo でサイトをビルド (本番環境向けに最適化)
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3  # ビルドしたファイルを gh-pages ブランチにデプロイ
+        if: github.ref == 'refs/heads/main'  # main ブランチの場合のみデプロイ (または master)
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public  # ビルドされたファイルが格納されるディレクトリ
+          # cname: example.com  # 独自ドメインを使用する場合 (後で設定)
