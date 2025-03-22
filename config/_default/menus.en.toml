@@ -1,0 +1,17 @@
+[[main]]
+  identifier = "posts"
+  name = "Posts"
+  pageRef = "/posts"
+  weight = 10
+
+[[main]]
+  identifier = "categories"
+  name = "Categories"
+  pageRef = "/categories"
+  weight = 20
+
+[[main]]
+  identifier = "tags"
+  name = "Tags"
+  pageRef = "/tags"
+  weight = 30

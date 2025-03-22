@@ -2,3 +2,21 @@ baseURL = "https://moduleb-com.github.io/blog/"
 languageCode = 'en-us'
 title = 'Shinitai'
 theme = "hugo-blog-awesome"
+
+[params]
+ since = 2025
+ favicon = "favicon.ico"
+ avatar = "images/avatar.png"
+ author = "MODULE B"
+ info = "A brief description of yourself"
+
+[params.social]
+ github = "your-github-username"
+ twitter = "your-twitter-username"
+ # ... 他の SNS
+
+[build]
+  writeStats = true # 追加
+
+[outputs]
+  home = [ "HTML", "RSS", "JSON" ] #追加
