@@ -12,7 +12,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
         with:
-          submodules: true  # サブモジュールをフェッチ (テーマを使用しているため)
+          submodules: recursive  # サブモジュールを再帰的に取得
+          fetch-depth: 0 # 全履歴を取得
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
@@ -21,7 +22,7 @@ jobs:
           extended: true # extended バージョンを使用
 
       - name: Build
-        run: hugo --minify  # Hugo でサイトをビルド (本番環境向けに最適化)
+        run: hugo --minify --cleanDestinationDir #cleanDestinationDirを追加
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3  # ビルドしたファイルを gh-pages ブランチにデプロイ
@@ -29,4 +30,4 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public  # ビルドされたファイルが格納されるディレクトリ
-          # cname: example.com  # 独自ドメインを使用する場合 (後で設定)
+          cname: your-domain.com  # 独自ドメインを使用する場合 (後で設定)
