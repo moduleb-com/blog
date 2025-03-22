@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>My Awesome Blog</title>
-    <link>http://localhost:1313/blog/</link>
-    <description>Recent content on My Awesome Blog</description>
+    <title>GitHub Pages on My Awesome Blog</title>
+    <link>http://localhost:1313/blog/tags/github-pages/</link>
+    <description>Recent content in GitHub Pages on My Awesome Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 30 Jan 2024 14:30:00 +0900</lastBuildDate><atom:link href="http://localhost:1313/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 30 Jan 2024 14:30:00 +0900</lastBuildDate><atom:link href="http://localhost:1313/blog/tags/github-pages/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hugo で始めるブログ作成入門</title>
       <link>http://localhost:1313/blog/posts/about-hugo/</link>

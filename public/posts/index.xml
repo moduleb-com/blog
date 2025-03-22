@@ -1,21 +1,57 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Shinitai</title>
-    <link>http://localhost:1313/posts/</link>
-    <description>Recent content in Posts on Shinitai</description>
+    <title>Posts on My Awesome Blog</title>
+    <link>http://localhost:1313/blog/posts/</link>
+    <description>Recent content in Posts on My Awesome Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Fri, 21 Mar 2025 13:34:34 +0900</lastBuildDate><atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Tue, 30 Jan 2024 14:30:00 +0900</lastBuildDate><atom:link href="http://localhost:1313/blog/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>My First Post</title>
-      <link>http://localhost:1313/posts/my-first-post/</link>
-      <pubDate>Fri, 21 Mar 2025 13:34:34 +0900</pubDate>
+      <title>Hugo で始めるブログ作成入門</title>
+      <link>http://localhost:1313/blog/posts/about-hugo/</link>
+      <pubDate>Tue, 30 Jan 2024 14:30:00 +0900</pubDate>
       
-      <guid>http://localhost:1313/posts/my-first-post/</guid>
+      <guid>http://localhost:1313/blog/posts/about-hugo/</guid>
       
-      <description>&lt;h1 id=&#34;はじめに&#34;&gt;はじめに&lt;/h1&gt;
-&lt;p&gt;これは最初の投稿です。Hugo でブログを始めました！&lt;/p&gt;</description>
+      <description>&lt;h1 id=&#34;hugo-とは&#34;&gt;Hugo とは？&lt;/h1&gt;
+&lt;p&gt;Hugo は、Go 言語で書かれた静的サイトジェネレーターです&amp;hellip;&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Hugo で始めるブログ作成入門</title>
+      <link>http://localhost:1313/blog/posts/my-first-post/</link>
+      <pubDate>Tue, 30 Jan 2024 14:30:00 +0900</pubDate>
+      
+      <guid>http://localhost:1313/blog/posts/my-first-post/</guid>
+      
+      <description>&lt;h1 id=&#34;hugo-とは&#34;&gt;Hugo とは？&lt;/h1&gt;
+&lt;p&gt;Hugo は、Go 言語で書かれた静的サイトジェネレーターです&amp;hellip;&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Hugo で始めるブログ作成入門</title>
+      <link>http://localhost:1313/blog/posts/my-second-post/</link>
+      <pubDate>Tue, 30 Jan 2024 14:30:00 +0900</pubDate>
+      
+      <guid>http://localhost:1313/blog/posts/my-second-post/</guid>
+      
+      <description>&lt;h1 id=&#34;hugo-とは&#34;&gt;Hugo とは？&lt;/h1&gt;
+&lt;p&gt;Hugo は、Go 言語で書かれた静的サイトジェネレーターです&amp;hellip;&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Hugo で始めるブログ作成入門</title>
+      <link>http://localhost:1313/blog/posts/web-development-tips/</link>
+      <pubDate>Tue, 30 Jan 2024 14:30:00 +0900</pubDate>
+      
+      <guid>http://localhost:1313/blog/posts/web-development-tips/</guid>
+      
+      <description>&lt;h1 id=&#34;hugo-とは&#34;&gt;Hugo とは？&lt;/h1&gt;
+&lt;p&gt;Hugo は、Go 言語で書かれた静的サイトジェネレーターです&amp;hellip;&lt;/p&gt;</description>
       
     </item>
     
