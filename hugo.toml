@@ -1,22 +1,27 @@
-baseURL = "https://moduleb-com.github.io/blog/"
-languageCode = 'en-us'
-title = 'Shinitai'
+baseURL = "https://moduleb-com.github.io/blog/"  # 正しい URL になっていることを確認
+languageCode = "ja"
+title = "My Awesome Blog"  # 好きなタイトルに変更
 theme = "hugo-blog-awesome"
 
 [params]
- since = 2025
- favicon = "favicon.ico"
- avatar = "images/avatar.png"
- author = "MODULE B"
- info = "A brief description of yourself"
+  since = 2024  # サイトの開始年
+  favicon = "favicon.ico"  # ファビコンのパス (static ディレクトリ内に配置)
+  # avatar = "images/avatar.png"  # ← コメントアウト (params から削除)
+  # author = "Your Name"  # ← コメントアウト (params から削除)
+  info = "A brief description of yourself"  # 簡単な自己紹介
 
 [params.social]
- github = "your-github-username"
- twitter = "your-twitter-username"
- # ... 他の SNS
+  github = "moduleb-com"  # GitHub ユーザー名
+  # twitter = "your-twitter-username"  # Twitter ユーザー名 (もしあれば)
+  # 他の SNS も設定可能
 
 [build]
-  writeStats = true # 追加
+  writeStats = true
 
 [outputs]
-  home = [ "HTML", "RSS", "JSON" ] #追加
+  home = [ "HTML", "RSS", "JSON" ]
+
+# 以下を追加 (author をテーブル形式で設定)
+[author]
+  name = "Your Name"  # あなたの名前
+  avatar = "images/avatar.png"  # アバター画像のパス (static/images に配置)
